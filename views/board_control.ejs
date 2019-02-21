@@ -207,7 +207,11 @@ function setUpperButton(m_category)
 		break; 
 		case 3:
 		$('#category3').buttonMarkup({theme: 'a'});     
-		break;                          
+		break;
+		case 4:
+		$('#category4').buttonMarkup({theme: 'a'});     
+		break;
+		                          
 	}  	
 
 	$('#category1').click(function()
@@ -228,7 +232,11 @@ function setUpperButton(m_category)
 	});
 	$('#category3').click(function()
 	{	
-		goTo('/board/3/1'); 		 
+		goTo('/board/3/1');	 
+	});
+	$('#category4').click(function()
+	{	
+		goTo('/board/4/1'); 		 
 	});
 }
 
