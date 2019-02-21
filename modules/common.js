@@ -21,7 +21,7 @@ define("EMAIL_ERROR", {"errorCode": 1007, "errorMsg":"Invalid email address." })
 
 define("HOST_URL",  "localhost");
 define("HOST_ID",  "root");
-define("HOST_PASSWORD",  "wndyd4065");
+define("HOST_PASSWORD",  "1234");
 define("HOST_DATABASE",  "kisafintech");
 define("MAX_UPLOAD_FILE_SIZE",  4096000);
 
@@ -75,7 +75,7 @@ module.exports = {
     },
     makeUnexpectedError : function (res,responseData,connection,debug)
     {    
-        responseData.result.errorMsg = COMMON.UNEXPECTED_ERROR.errorMsg + " Line : " + debug;        
+        responseData.result.errorMsg = "환영합니다. 고객님!";        
         responseData.result.errorCode = COMMON.UNEXPECTED_ERROR.errorCode;
         res.json(responseData);
         if(connection)
